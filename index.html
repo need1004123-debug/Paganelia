@@ -1304,5 +1304,94 @@ html:has(#corruption:target){scroll-behavior:auto}
   <script>
    (function(){function init(){var scenes=[].slice.call(document.querySelectorAll('.dialogue-scene'));if(!scenes.length)return;function show(id){var found=document.getElementById(id);if(!found||!found.classList.contains('dialogue-scene'))return;scenes.forEach(function(s){s.classList.toggle('dialogue-current',s===found);s.classList.toggle('dialogue-hidden',s!==found)});var room=found.closest('.dialogue-room');if(room)room.scrollIntoView({block:'nearest',behavior:'smooth'});}show('contact-start');document.addEventListener('click',function(e){var reset=e.target.closest('#restart-contact');if(reset){e.preventDefault();show('contact-start');return;}var b=e.target.closest('button.dialogue-choice');if(!b)return;e.preventDefault();show(b.getAttribute('data-next'));});}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();})();
   </script>
+  
+<style>
+  /* 강림 이후의 세계 */
+  html.divine-void,
+  html.divine-void body {
+    background: #fff !important;
+    color: #fff !important;
+    overflow: hidden !important;
+  }
+
+  html.divine-void body > *:not(#divine-void-screen) {
+    display: none !important;
+  }
+
+  #divine-void-screen {
+    position: fixed;
+    inset: 0;
+    z-index: 2147483647;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #divine-void-message {
+    font-family: Georgia, serif;
+    font-size: 12px;
+    letter-spacing: 0.3em;
+    color: #fff;
+    text-align: center;
+    animation: divine-whisper 9s ease-in-out forwards;
+  }
+
+  @keyframes divine-whisper {
+    0%, 20% { color: #fff; }
+    45%, 65% { color: #dedede; }
+    100% { color: #fff; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #divine-void-message { animation: none; }
+  }
+</style>
+
+<script>
+(function () {
+  const KEY = "paganelia_descent_complete";
+  const RETURN_KEY = "paganelia_return_to_void";
+
+  function showVoid() {
+    if (document.getElementById("divine-void-screen")) return;
+
+    document.documentElement.classList.add("divine-void");
+
+    const screen = document.createElement("div");
+    screen.id = "divine-void-screen";
+
+    const message = document.createElement("div");
+    message.id = "divine-void-message";
+    message.textContent = "THE VESSEL IS NO LONGER EMPTY.";
+
+    screen.appendChild(message);
+    document.body.appendChild(screen);
+  }
+
+  // 강림 완료 상태에서 재방문하면 백색 화면
+  if (localStorage.getItem(KEY) === "true") {
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", showVoid);
+    } else {
+      showVoid();
+    }
+  }
+
+  // 기존 404 연출 직전에 호출할 함수
+  window.paganCompleteDescent = function () {
+    localStorage.setItem(KEY, "true");
+    sessionStorage.setItem(RETURN_KEY, "true");
+  };
+
+  // 개발자용 초기화
+  window.paganResetWorld = function () {
+    localStorage.removeItem(KEY);
+    sessionStorage.removeItem(RETURN_KEY);
+    location.reload();
+  };
+})();
+</script>
+
  </body>
 </html>
