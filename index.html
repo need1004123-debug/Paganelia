@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   PAGANELIA — THE VESSEL
+  </title>
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600&display=swap');
+:root{--bg:#0b090b;--panel:#141013;--wine:#681c31;--red:#c64b65;--ivory:#e8ded5;--muted:#9b8990;--line:#4b3039;--gold:#a18a78}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ivory);font-family:'Noto Sans KR',sans-serif;font-weight:300;overflow-x:hidden}body:before{content:'';position:fixed;inset:0;pointer-events:none;opacity:.15;z-index:9;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.25'/%3E%3C/svg%3E")}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}.shell{max-width:1380px;margin:auto;padding:0 46px}.top{height:74px;border-bottom:1px solid #47303a;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font:600 24px 'Cormorant Garamond',serif;letter-spacing:.2em}.brand b{color:var(--red);font-weight:400}.top nav{display:flex;gap:28px;font-size:10px;letter-spacing:.22em;color:#cbbcc0}.top nav a:hover{color:#f28aa1}.seal{font:18px 'Cormorant Garamond';color:var(--red)}.ticker{background:#30101b;color:#ddafbd;text-align:center;padding:9px;font-size:9px;letter-spacing:.3em;border-bottom:1px solid #71394a}.hero{display:grid;grid-template-columns:1.03fr .97fr;min-height:730px;border-bottom:1px solid var(--line)}.visual{position:relative;min-height:730px;display:flex;align-items:end;justify-content:center;overflow:hidden;border-right:1px solid var(--line);background:radial-gradient(ellipse at 50% 45%,#39212a 0%,#171014 43%,#0b090b 78%)}.visual:before{content:'✝';position:absolute;top:5%;left:50%;transform:translateX(-50%);font:440px 'Cormorant Garamond';color:#5d2638;opacity:.25}.halo{position:absolute;width:510px;height:510px;border:1px solid #6b3a4b;border-radius:50%;top:90px;left:50%;transform:translateX(-50%);box-shadow:0 0 0 35px #2d18201f,0 0 0 90px #45212b12}.halo:before,.halo:after{content:'';position:absolute;inset:25px;border:1px dashed #75515a;border-radius:50%;animation:rotate 90s linear infinite}.halo:after{inset:70px;animation-direction:reverse}@keyframes rotate{to{transform:rotate(360deg)}}.figure{position:relative;z-index:2;width:min(100%,650px);height:710px;object-fit:contain;object-position:center bottom;filter:contrast(1.12) saturate(.77) drop-shadow(0 14px 20px #0008);mix-blend-mode:screen}.visual-label{position:absolute;left:26px;bottom:22px;z-index:3;font-size:9px;letter-spacing:.25em;color:#bda9ae}.side-number{position:absolute;right:18px;top:24px;writing-mode:vertical-rl;letter-spacing:.35em;font-size:10px;color:#9c707e}.intro{padding:74px 7% 55px;display:flex;flex-direction:column;justify-content:center}.eyebrow{color:var(--red);font-size:10px;letter-spacing:.35em;margin-bottom:22px}.big{font:500 clamp(62px,7vw,116px)/.9 'Cormorant Garamond',serif;letter-spacing:-.05em;margin:0}.big em{font-weight:400;color:#b54862}.subtitle{font:18px 'Cormorant Garamond',serif;letter-spacing:.26em;color:#a58a91;margin:24px 0 30px}.rule{height:1px;background:linear-gradient(90deg,#975268,transparent);margin:20px 0 26px}.intro-copy{font-size:13px;line-height:2.15;color:#c5b7b9;max-width:480px}.quote{font:italic 25px/1.45 'Cormorant Garamond',serif;color:#dfb3bf;margin:30px 0}.micro{font-size:10px;color:#917b81;letter-spacing:.16em}.stat-grid{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line);margin-top:32px}.stat{padding:17px 20px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.stat small{display:block;color:#937e85;font-size:9px;letter-spacing:.2em;margin-bottom:8px}.stat strong{font-size:14px;font-weight:400}.section{padding:95px 0;border-bottom:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:32px}.section h2{font:500 52px/1 'Cormorant Garamond',serif;margin:0}.section h2 span{color:var(--red)}.section-no{color:#9b737e;font-size:10px;letter-spacing:.3em}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}.tab{border:1px solid #563440;color:#ad939b;background:transparent;padding:12px 22px;font-size:11px;letter-spacing:.12em}.tab.active,.tab:hover{color:#fff;background:#632139;border-color:#a14d66}.record{border:1px solid var(--line);display:grid;grid-template-columns:260px 1fr;min-height:290px;background:linear-gradient(135deg,#1d1319,#100d10)}.record-left{border-right:1px solid var(--line);padding:33px;display:flex;flex-direction:column;justify-content:space-between;background:repeating-linear-gradient(0deg,transparent 0 24px,#ffffff05 25px)}.record-left .sigil{font:130px/.8 'Cormorant Garamond';color:#a3425d;text-align:center}.record-left .id{font-size:10px;color:#ae8b97;letter-spacing:.2em}.record-content{padding:38px 45px}.record-content h3{font:36px 'Cormorant Garamond';margin:0 0 20px}.record-content p{color:#c9b8bd;font-size:13px;line-height:2.2;max-width:760px}.record-content .emphasis{color:#ef9db2}.relationship{display:grid;grid-template-columns:1fr 80px 1fr;align-items:center;gap:20px;margin-top:35px}.relation-card{border:1px solid var(--line);padding:28px;min-height:170px;background:#160f14}.relation-card small{font-size:10px;color:#a27b87;letter-spacing:.25em}.relation-card h3{font:38px 'Cormorant Garamond';margin:12px 0}.relation-card p{font-size:12px;line-height:1.9;color:#c4b3b8}.connector{text-align:center;color:#c56882;font-size:30px}.ritual{position:relative;text-align:center;padding:110px 22px;background:radial-gradient(ellipse at 50% 40%,#3b1424,#120b10 65%,#0b090b)}.ritual:before{content:'✝';position:absolute;top:8px;left:50%;transform:translateX(-50%);font:110px 'Cormorant Garamond';color:#a54863;opacity:.2}.ritual h2{font:500 62px 'Cormorant Garamond';margin:0 0 12px}.ritual p{color:#b69ca6;font-size:12px;line-height:2}.invoke{margin:32px auto 0;padding:16px 38px;border:1px solid #b7637c;background:#5a1d32;color:#fff;letter-spacing:.28em;font-size:11px;transition:.3s}.invoke:hover{background:#a03555;box-shadow:0 0 45px #a0355550}.invoked .ritual{animation:pulse 1.2s ease-in-out 2}.invoked .big{animation:glitch .3s 3}@keyframes pulse{50%{background:#6a172f}}@keyframes glitch{25%{transform:translateX(3px);text-shadow:-4px 0 #d24e67}75%{transform:translateX(-3px);text-shadow:4px 0 #fff}}.message{min-height:26px;margin-top:24px;font:italic 21px 'Cormorant Garamond';color:#f0b5c5}.footer{display:flex;justify-content:space-between;gap:20px;padding:32px 0;color:#806e74;font-size:10px;letter-spacing:.15em}.divider-icon{color:#a04d64;margin:0 10px}@media(max-width:900px){.shell{padding:0 20px}.top nav{gap:12px}.top nav a{font-size:9px}.hero{grid-template-columns:1fr}.visual{min-height:560px;border-right:0;border-bottom:1px solid var(--line)}.figure{height:550px}.halo{width:400px;height:400px;top:60px}.intro{padding:55px 6%}.big{font-size:clamp(64px,14vw,105px)}.record{grid-template-columns:1fr}.record-left{min-height:130px;border-right:0;border-bottom:1px solid var(--line);flex-direction:row;align-items:center}.record-left .sigil{font-size:80px}.relationship{grid-template-columns:1fr}.connector{transform:rotate(90deg)}.section{padding:65px 0}}@media(max-width:500px){.brand{font-size:19px}.top nav{gap:9px}.top nav a{font-size:8px;letter-spacing:.04em}.seal{display:none}.visual{min-height:460px}.figure{height:460px}.halo{width:300px;height:300px}.section h2{font-size:42px}.record-content{padding:28px}.ritual h2{font-size:45px}.stat{padding:13px}.stat strong{font-size:12px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important}}
+
+/* JavaScript-free ritual switch, including offline file previews */
+.ritual-toggle{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
+.ritual-trigger{display:inline-block;cursor:pointer;user-select:none;margin:32px auto 0;padding:16px 38px;border:1px solid #b7637c;background:#5a1d32;color:#fff;letter-spacing:.28em;font-size:11px;transition:background .25s,box-shadow .25s}
+.ritual-trigger:hover,.ritual-toggle:focus-visible + .ritual-trigger{background:#a03555;box-shadow:0 0 45px #a0355550}
+.ritual .message .after{display:none}
+.ritual-toggle:checked ~ .message .before{display:none}
+.ritual-toggle:checked ~ .message .after{display:block;color:#ffd8e3;text-shadow:0 0 22px #e32c64;font-size:clamp(20px,3vw,32px)}
+.ritual-toggle:checked + .ritual-trigger{background:#8b1b3b;border-color:#ffb0c7;box-shadow:0 0 30px #ba244d8c}
+.ritual:has(.ritual-toggle:checked){background:radial-gradient(ellipse at 50% 35%,#811532,#390e20 55%,#0b090b);box-shadow:inset 0 0 110px #8d133850;transition:background .4s}
+.ritual-toggle:checked ~ .ritual-sigil{opacity:1;transform:translate(-50%,-50%) scale(1);}
+.ritual-sigil{pointer-events:none;position:absolute;top:42%;left:50%;transform:translate(-50%,-50%) scale(.6);font:140px 'Cormorant Garamond',serif;color:#ec456e;opacity:0;text-shadow:0 0 70px #d80d42;transition:opacity .5s,transform .5s;z-index:0}
+.ritual>h2,.ritual>p,.ritual>.eyebrow,.ritual>.ritual-trigger,.ritual>.message{position:relative;z-index:1}
+
+/* THE DESCENT / staged corruption */
+#corruption{position:fixed;inset:0;z-index:9999;background:rgba(11,0,5,.96);color:#f1dce1;display:none;overflow:hidden;font-family:monospace}
+#corruption.active{display:block}
+#corruption:before{content:"";pointer-events:none;position:absolute;inset:0;z-index:6;background:repeating-linear-gradient(0deg,transparent 0 3px,rgba(0,0,0,.35) 4px 5px);opacity:.7}
+#corruption .corrupt-head{position:absolute;left:5vw;top:5vh;font-size:clamp(10px,1vw,15px);letter-spacing:.35em;color:#d78594}
+#corruption .corrupt-lines{position:absolute;inset:13vh 6vw 10vh;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;gap:13px}
+#corruption .corrupt-line{font-size:clamp(15px,2.3vw,30px);line-height:1.4;text-shadow:2px 0 #b60037,-2px 0 #264e69;animation:line-in .3s steps(3,end) both}
+#corruption .corrupt-line:nth-child(3n){margin-left:9%;color:#df9ba8}
+#corruption .corrupt-line:nth-child(4n){margin-left:2%;font-size:clamp(12px,1.7vw,22px)}
+#corruption .corrupt-line.final{font-size:clamp(28px,6vw,88px);font-weight:900;letter-spacing:-.06em;color:#fff;text-align:center;margin:0;text-shadow:4px 0 #e00036,-4px 0 #2979aa;animation:final-appear .8s steps(2,end) both}
+#corruption .corrupt-cross{position:absolute;right:4vw;top:8vh;color:#9f233e;font-size:clamp(110px,30vw,460px);opacity:.13;animation:cross-twist 6s linear infinite}
+body.descending main,body.descending footer,body.descending header{animation:page-collapse .28s steps(2,end) infinite;filter:contrast(2) saturate(2)}
+body.descending{overflow:hidden}
+#corruption .noise{position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,transparent 0 45%,rgba(170,0,25,.18) 46% 48%,transparent 49%),repeating-linear-gradient(90deg,transparent 0 78px,rgba(255,255,255,.04) 80px 82px);animation:noise-shift .15s steps(3,end) infinite}
+#corruption.terminal{background:#070707;color:#eee;overflow:auto}
+#corruption.terminal:before,#corruption.terminal .noise,#corruption.terminal .corrupt-cross,#corruption.terminal .corrupt-head,#corruption.terminal .corrupt-lines{display:none}
+#corruption .error-page{display:none;min-height:100%;padding:clamp(24px,7vw,100px);align-items:flex-start;justify-content:center;flex-direction:column;max-width:1000px;margin:auto}
+#corruption.terminal .error-page{display:flex;animation:line-in .35s steps(2,end) both}
+.error-code{font-size:clamp(110px,24vw,310px);font-weight:900;letter-spacing:-.11em;line-height:.85;color:#f2e8e8;text-shadow:7px 0 #af1438,-6px 0 #183c58}
+.error-title{font-size:clamp(19px,3vw,32px);letter-spacing:.1em;margin-top:32px}
+.error-description{font-size:clamp(12px,1.4vw,17px);line-height:2;color:#9e8790;margin:20px 0 32px}
+.error-restart{cursor:pointer;border:1px solid #a34357;color:#f1dce1;background:transparent;padding:15px 23px;font:inherit;letter-spacing:.14em}
+.error-restart:hover,.error-restart:focus-visible{background:#6e1932}
+@keyframes line-in{from{opacity:0;transform:translate(25px,-9px) skew(-9deg)}to{opacity:1;transform:none}}
+@keyframes final-appear{0%{opacity:0;transform:scale(1.2)}35%{opacity:1;transform:scale(.98)}100%{opacity:1;transform:scale(1)}}
+@keyframes page-collapse{0%{transform:translate(0,0) skew(0)}33%{transform:translate(-5px,2px) skew(1deg)}66%{transform:translate(7px,-2px) skew(-1deg)}}
+@keyframes cross-twist{to{transform:rotate(360deg)}}
+@keyframes noise-shift{0%{transform:translateX(-10px)}100%{transform:translateX(13px)}}
+@media(prefers-reduced-motion:reduce){#corruption *,body.descending main,body.descending footer,body.descending header{animation:none!important}}
+
+/* MOBILE SAFE: URL fragment activates the entire sequence, no JS required */
+html:has(#corruption:target){scroll-behavior:auto}
+#corruption{display:none;position:fixed;inset:0;width:100vw;height:100vh;height:100dvh;z-index:2147483647;overflow:hidden;background:#080307;isolation:isolate}
+#corruption:target{display:block;animation:descent-shake .15s steps(2) 0s 14,descent-flash .65s steps(2) 0s 5}
+#corruption:target .corrupt-head{animation:fade-archive .6s linear 8.2s forwards}
+#corruption .corrupt-lines{inset:12% 6% 7%;display:block;overflow:hidden}
+#corruption .mobile-line{position:absolute;left:0;right:0;top:calc(3% + var(--n) * 5.2%);opacity:0;font-size:clamp(12px,3.6vw,24px);line-height:1.3;overflow-wrap:anywhere;color:#f1c3cd;text-shadow:2px 0 #bc1643,-2px 0 #356278}
+#corruption:target .mobile-line{animation:line-rise .35s steps(2,end) calc(var(--n) * .46s) forwards}
+#corruption .mobile-line:nth-last-child(2),#corruption .mobile-line:last-child{font-size:clamp(21px,5.7vw,40px);font-weight:800;color:white}
+#corruption:target .corrupt-lines{animation:fade-archive .35s linear 8.5s forwards}
+#corruption .error-page{display:flex!important;flex-direction:column;align-items:center;justify-content:center;position:absolute;inset:0;padding:22px;text-align:center;background:#080307;opacity:0;visibility:hidden;pointer-events:none;z-index:30}
+#corruption:target .error-page{animation:show-error .1s steps(1,end) 9.1s forwards}
+#corruption .error-code{font-size:clamp(105px,32vw,300px);line-height:.95;font-weight:900;color:#f3dce3;text-shadow:5px 0 #d51547,-5px 0 #386b84}
+#corruption .error-title{font-size:clamp(13px,3.5vw,22px);letter-spacing:.06em;line-height:1.5;margin:20px 0}
+#corruption .error-description{font-size:clamp(11px,2.8vw,15px);line-height:1.9;color:#c7a3af}
+#corruption .error-restart{display:inline-block;margin-top:22px;border:1px solid #c44a70;padding:15px 22px;color:white;background:#3a1120;cursor:pointer;font-size:12px;letter-spacing:.07em}
+.ritual-trigger{touch-action:manipulation;min-height:50px;display:inline-flex;align-items:center;justify-content:center;max-width:95vw;text-align:center}
+@keyframes line-rise{from{opacity:0;transform:translateX(12px)}to{opacity:1;transform:translateX(0)}}
+@keyframes fade-archive{to{opacity:0}}
+@keyframes show-error{to{opacity:1;visibility:visible;pointer-events:auto}}
+@keyframes descent-shake{0%{transform:translate(3px,-2px)}50%{transform:translate(-3px,2px)}100%{transform:none}}
+@keyframes descent-flash{0%,50%{background:#340013}25%,75%{background:#080307}100%{background:#080307}}
+@media(max-width:600px){#corruption .corrupt-head{top:3%;left:5%;right:5%;font-size:9px;letter-spacing:.08em}#corruption .corrupt-lines{inset:11% 5% 5%}#corruption .mobile-line{top:calc(1% + var(--n) * 5.5%)}#corruption .corrupt-cross{font-size:65vw;top:22%}}
+@media(prefers-reduced-motion:reduce){#corruption:target .mobile-line{opacity:1;animation:none}#corruption:target .error-page{animation:show-error .1s steps(1,end) 9.1s forwards}}
+
+/* V3: no rotating crosses; stronger corruption; reliable terminal */
+.halo,.halo:before,.halo:after,.corrupt-cross{display:none!important;animation:none!important}
+#corruption{transform:none!important;overflow:hidden;contain:layout paint;background:#050206}
+#corruption:target{display:block!important;animation:none!important}
+#corruption:before{content:"";position:absolute;inset:-25%;z-index:7;pointer-events:none;opacity:0;background:repeating-linear-gradient(0deg,transparent 0 3px,#ff164d55 4px 5px,transparent 6px 10px),repeating-linear-gradient(90deg,transparent 0 27px,#28d8ff22 28px 31px);mix-blend-mode:screen}
+#corruption:target:before{animation:scan-break .11s steps(2,end) infinite,noise-opacity .8s steps(2,end) 11 forwards}
+#corruption:after{content:"FATAL ERROR // MEMORY CORRUPTION // P-05";position:absolute;left:0;right:0;top:47%;z-index:9;text-align:center;color:#fff;background:#f90048;padding:12px 4px;font:bold clamp(11px,3vw,22px) monospace;letter-spacing:.04em;opacity:0;pointer-events:none}
+#corruption:target:after{animation:error-flash .55s steps(1,end) 2s 7}
+#corruption .corrupt-head{z-index:8;position:absolute;color:#f6a8c0;text-shadow:2px 0 #04dfff}
+#corruption .corrupt-lines{z-index:5}
+#corruption .mobile-line{color:#fff;font-weight:650;text-shadow:-3px 0 #ff0054,3px 0 #00cfff;filter:contrast(1.4)}
+#corruption:target .mobile-line{animation:line-rise .18s steps(2,end) calc(var(--n)*.49s) forwards,line-glitch .13s steps(2,end) calc(var(--n)*.49s) 6}
+#corruption:target .corrupt-lines{animation:fade-archive .08s linear 8.55s forwards}
+#corruption .error-page{z-index:100!important;display:flex!important;position:absolute!important;inset:0!important;background:#080309!important;opacity:0;visibility:hidden;pointer-events:none;transform:none!important;animation:none}
+#corruption:target .error-page{animation:terminal-reveal .01s step-end 9.1s forwards!important}
+#corruption.finished .error-page{opacity:1!important;visibility:visible!important;pointer-events:auto!important;animation:none!important}
+#corruption.finished .corrupt-lines,#corruption.finished .corrupt-head,#corruption.finished .noise{display:none!important}
+#corruption.finished:before,#corruption.finished:after{display:none!important}
+#corruption .error-code{display:block!important;font:900 clamp(112px,36vw,280px)/1 monospace!important;color:#f5e9ec!important;letter-spacing:-.12em;text-shadow:-7px 0 #ef004a,7px 0 #00b5d1}
+#corruption .error-title{color:#ff9bb8!important;font-weight:bold!important;letter-spacing:.06em}
+#corruption .error-restart{position:relative;z-index:102}
+@keyframes terminal-reveal{0%{opacity:0;visibility:hidden}100%{opacity:1;visibility:visible;pointer-events:auto}}
+@keyframes scan-break{0%{transform:translate(0,0) skewX(0)}25%{transform:translate(-8%,4%) skewX(8deg)}50%{transform:translate(7%,-3%) skewX(-6deg)}75%{transform:translate(-4%,7%) skewX(3deg)}100%{transform:translate(5%,-6%)}}
+@keyframes noise-opacity{0%,100%{opacity:.2}25%{opacity:.95}50%{opacity:.1}75%{opacity:.7}}
+@keyframes error-flash{0%,100%{opacity:0}40%,65%{opacity:1}}
+@keyframes line-glitch{0%,100%{transform:translateX(0)}25%{transform:translateX(-15px) skewX(5deg)}50%{transform:translateX(13px)}75%{transform:translateX(-5px) skewX(-8deg)}}
+@media(max-width:600px){#corruption .mobile-line{top:calc(1% + var(--n)*5.5%);font-size:clamp(12px,3.4vw,19px)}#corruption .error-code{font-size:36vw!important}}
+@media(prefers-reduced-motion:reduce){#corruption:target .error-page{animation:terminal-reveal .01s step-end 9.1s forwards!important}}
+
+/* V4 — final line -> instant blackout -> blue-screen 404, mobile-safe */
+#corruption .error-page,
+#corruption:target .error-page,
+#corruption.finished .error-page{
+  position:absolute!important;inset:0!important;width:100%!important;height:100%!important;
+  max-width:none!important;margin:0!important;padding:8vw!important;
+  display:flex!important;flex-direction:column!important;align-items:flex-start!important;
+  justify-content:center!important;text-align:left!important;
+  background:#0863b5!important;color:#fff!important;border:0!important;
+  box-shadow:none!important;text-shadow:none!important;
+}
+#corruption .error-code{font:400 clamp(92px,25vw,180px)/1.1 'Segoe UI',Arial,sans-serif!important;letter-spacing:-.06em!important;color:#fff!important;text-shadow:none!important}
+#corruption .error-title{font:400 clamp(26px,7vw,48px)/1.3 'Segoe UI',Arial,sans-serif!important;letter-spacing:0!important;color:#fff!important;text-shadow:none!important;margin:12px 0 0!important}
+#corruption .error-description,#corruption .error-restart{display:none!important}
+/* Blackout overlay is visible for a fraction of a second before blue appears. */
+#corruption:target .error-page{animation:blue-arrival 8.82s steps(1,end) both!important}
+#corruption.finished .error-page{animation:none!important;opacity:1!important;visibility:visible!important;pointer-events:auto!important}
+#corruption:target .corrupt-lines{animation:fade-archive .01s linear 8.46s forwards!important}
+#corruption:target .corrupt-head{animation:fade-archive .01s linear 8.46s forwards!important}
+#corruption:target .noise{animation:noise-shift .15s steps(3,end) infinite,fade-archive .01s linear 8.46s forwards!important}
+#corruption:target:before,#corruption:target:after{animation:none!important;display:none!important}
+#corruption:target{animation:background-blackout 8.82s steps(1,end) both!important}
+@keyframes background-blackout{0%,95.8%{background:#050206}95.9%,100%{background:#000}}
+@keyframes blue-arrival{0%,99.8%{opacity:0;visibility:hidden;pointer-events:none}99.9%,100%{opacity:1;visibility:visible;pointer-events:auto}}
+@media(prefers-reduced-motion:reduce){#corruption:target .error-page{animation:blue-arrival 8.82s steps(1,end) both!important}}
+
+/* NESTS document recovery */
+.decrypt-section{padding:70px 0 90px;scroll-margin-top:30px;border-top:1px solid var(--line)}
+.decrypt-console{position:relative;background:linear-gradient(145deg,#171014,#090b0e);border:1px solid #674050;box-shadow:0 20px 70px #0008;overflow:hidden}
+.decrypt-console:before{content:' ';position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,transparent 0 3px,#e9c4c405 4px);opacity:.45}
+.decrypt-top{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:14px 18px;background:#31131e;border-bottom:1px solid #704052;font-size:10px;letter-spacing:.15em;color:#ead0d5}
+.decrypt-top .live{color:#ff8c9d}.decrypt-main{padding:24px;position:relative}
+.decrypt-meta{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;color:#a48c97;font:11px monospace;letter-spacing:.08em}
+.decrypt-progress{height:5px;background:#35242b;margin:18px 0 24px;overflow:hidden}.decrypt-progress>div{height:100%;width:0;background:linear-gradient(90deg,#8c263f,#ef7994);transition:width .4s}
+.decrypt-case{font:600 clamp(28px,4vw,42px) 'Cormorant Garamond',serif;margin:6px 0 12px}.decrypt-text{color:#cdbec4;line-height:2;min-height:75px;font-size:13px}
+.redact{background:#7b3147;color:#f7dce4;padding:1px 5px;letter-spacing:.07em;box-decoration-break:clone}
+.decrypt-prompt{font-size:12px;letter-spacing:.07em;color:#e9bdc8;margin:22px 0 12px}
+.decrypt-answers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.decrypt-choice{border:1px solid #6c4551;background:#1b1419;color:#ead7dd;padding:14px 8px;min-height:52px;font-size:12px;transition:background .2s,border .2s}
+.decrypt-choice:active,.decrypt-choice:hover{background:#5b2539;border-color:#c96a83}.decrypt-choice:focus-visible{outline:2px solid #ff9fb8;outline-offset:2px}
+.decrypt-choice:disabled{opacity:.45}.decrypt-feedback{min-height:38px;padding-top:14px;font-size:12px;color:#f29aac}
+.decrypt-document{margin-top:20px;border:1px solid #765264;background:#130f14;padding:22px;animation:decryptAppear .4s ease-out}
+.decrypt-document h4{font:600 26px 'Cormorant Garamond',serif;margin:4px 0 12px}.decrypt-document p{font-size:13px;line-height:2;color:#d5c5cc}
+.decrypt-stamp{color:#ec8199;font:11px monospace;letter-spacing:.1em}.decrypt-next{background:#6c253d;border:1px solid #bb6279;color:white;padding:13px 19px;margin-top:17px;min-height:48px;letter-spacing:.1em;font-size:11px}
+.decrypt-final{border:1px solid #c16982;padding:20px;margin-top:18px;background:#27121c}.decrypt-final h4{font:600 30px 'Cormorant Garamond',serif;margin:0 0 8px}.decrypt-final p{line-height:1.9;font-size:13px}.decrypt-restart{background:transparent;border:1px solid #b96d83;color:#e7c6d0;padding:12px 18px;margin-top:10px;min-height:44px}
+@keyframes decryptAppear{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:620px){.decrypt-section{padding:50px 0 65px}.decrypt-main{padding:18px 14px}.decrypt-top{font-size:9px;padding:13px 10px}.decrypt-answers{grid-template-columns:1fr}.decrypt-choice{text-align:left;padding:13px 15px}.decrypt-document{padding:16px}.decrypt-meta{font-size:10px}}
+
+/* NESTS clearance + dialogue */
+.ritual-trigger.locked{opacity:.42;filter:grayscale(1);cursor:not-allowed;pointer-events:none;border-color:#685b62;background:#292329}
+.ritual-lock{color:#e39bad;font-size:11px;letter-spacing:.1em;margin:12px auto;max-width:400px}
+.dialogue-room{border:1px solid #593342;background:#09080b;box-shadow:inset 0 0 70px #240710;overflow:hidden}
+.dialogue-viewport{position:relative;min-height:300px;background:radial-gradient(ellipse at 50% 55%,#14090e 0%,#020203 64%);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.dialogue-viewport:before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 3px,#ffffff06 4px);pointer-events:none}
+.dialogue-eyes{display:flex;gap:75px;transform:translateY(-3px);animation:eyesBreath 4s ease-in-out infinite}
+.dialogue-eye{width:28px;height:28px;border-radius:50%;background:#ed122c;box-shadow:0 0 14px #e10a29,0 0 45px #a40020,0 0 95px #830017}
+@keyframes eyesBreath{50%{opacity:.67;transform:translateY(-3px) scale(.92)}}
+.dialogue-id{position:absolute;top:18px;left:20px;font-size:10px;letter-spacing:.2em;color:#8d6875}
+.dialogue-id.right{left:auto;right:20px}
+.dialogue-panel{border-top:1px solid #4d2837;padding:24px;background:linear-gradient(#190f16,#100c11)}
+.dialogue-speaker{color:#d66c8c;letter-spacing:.24em;font-size:10px;margin-bottom:12px}
+.dialogue-line{font-size:17px;line-height:1.8;min-height:70px;color:#f2e0e5;word-break:keep-all}
+.dialogue-choices{display:grid;gap:10px;margin-top:20px}
+.dialogue-choice{width:100%;padding:15px 18px;background:#20141c;color:#ead6dd;border:1px solid #654152;text-align:left;cursor:pointer;font:inherit;font-size:13px;line-height:1.5;transition:.2s}
+.dialogue-choice:hover,.dialogue-choice:focus-visible{background:#5c1c33;border-color:#d1708d}
+.dialogue-choice:disabled{opacity:.5;cursor:default}
+.dialogue-log{margin-top:16px;border-top:1px solid #452936;padding-top:14px;max-height:220px;overflow:auto;color:#ad8997;font-size:12px;line-height:1.8}
+.dialogue-log p{margin:4px 0}
+.dialogue-reset{margin-top:16px;background:transparent;border:1px solid #664251;color:#cba1ae;padding:10px 18px;cursor:pointer}
+.dialogue-status{font-size:10px;color:#a78690;letter-spacing:.16em;margin:10px 0}
+@media(max-width:600px){.dialogue-viewport{min-height:240px}.dialogue-eyes{gap:55px}.dialogue-eye{width:23px;height:23px}.dialogue-panel{padding:18px}.dialogue-line{font-size:15px}}
+
+/* CSS-only interaction: supports viewers that block scripts */
+.dialogue-scene{display:none}
+.dialogue-scene.start{display:block}
+#dialogue:has(.dialogue-scene:target) .dialogue-scene.start{display:none}
+#dialogue .dialogue-scene:target{display:block}
+a.dialogue-choice{display:flex;align-items:center;text-decoration:none;cursor:pointer;touch-action:manipulation}
+a.dialogue-reset{display:inline-block;text-decoration:none;cursor:pointer}
+#begin-descent{pointer-events:none;opacity:.45;filter:grayscale(.75)}
+body:has(#p1ok:checked):has(#p2ok:checked):has(#p3ok:checked) #begin-descent{pointer-events:auto;opacity:1;filter:none}
+body:has(#p1ok:checked):has(#p2ok:checked):has(#p3ok:checked) #ritual-lock{color:#f5a5ba}
+body:has(#p1ok:checked):has(#p2ok:checked):has(#p3ok:checked) #ritual-lock::after{content:'  ✝ CLEARANCE GRANTED';display:block;margin-top:8px}
+
+body:not(:has(#p1ok:checked):has(#p2ok:checked):has(#p3ok:checked)) #corruption:target{display:none!important}
+  </style>
+  <style>
+   .archive-radio{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
+.archive-switch .archive-panel{display:none}
+#entry-origin:checked ~ .panel-origin,#entry-awakening:checked ~ .panel-awakening,#entry-descent:checked ~ .panel-descent{display:grid}
+#entry-origin:checked ~ .tabs label[for="entry-origin"],#entry-awakening:checked ~ .tabs label[for="entry-awakening"],#entry-descent:checked ~ .tabs label[for="entry-descent"]{color:#fff;background:#632139;border-color:#a14d66}
+.archive-switch .tab{cursor:pointer;display:inline-flex;align-items:center;user-select:none}
+#entry-origin:focus-visible ~ .tabs label[for="entry-origin"],#entry-awakening:focus-visible ~ .tabs label[for="entry-awakening"],#entry-descent:focus-visible ~ .tabs label[for="entry-descent"]{outline:2px solid #fff;outline-offset:3px}
+@media(max-width:650px){.archive-switch .archive-panel{grid-template-columns:1fr}.archive-switch .record-left{border-right:0;border-bottom:1px solid var(--line);min-height:120px}}
+
+/* JavaScript-free ritual switch, including offline file previews */
+.ritual-toggle{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
+.ritual-trigger{display:inline-block;cursor:pointer;user-select:none;margin:32px auto 0;padding:16px 38px;border:1px solid #b7637c;background:#5a1d32;color:#fff;letter-spacing:.28em;font-size:11px;transition:background .25s,box-shadow .25s}
+.ritual-trigger:hover,.ritual-toggle:focus-visible + .ritual-trigger{background:#a03555;box-shadow:0 0 45px #a0355550}
+.ritual .message .after{display:none}
+.ritual-toggle:checked ~ .message .before{display:none}
+.ritual-toggle:checked ~ .message .after{display:block;color:#ffd8e3;text-shadow:0 0 22px #e32c64;font-size:clamp(20px,3vw,32px)}
+.ritual-toggle:checked + .ritual-trigger{background:#8b1b3b;border-color:#ffb0c7;box-shadow:0 0 30px #ba244d8c}
+.ritual:has(.ritual-toggle:checked){background:radial-gradient(ellipse at 50% 35%,#811532,#390e20 55%,#0b090b);box-shadow:inset 0 0 110px #8d133850;transition:background .4s}
+.ritual-toggle:checked ~ .ritual-sigil{opacity:1;transform:translate(-50%,-50%) scale(1);}
+.ritual-sigil{pointer-events:none;position:absolute;top:42%;left:50%;transform:translate(-50%,-50%) scale(.6);font:140px 'Cormorant Garamond',serif;color:#ec456e;opacity:0;text-shadow:0 0 70px #d80d42;transition:opacity .5s,transform .5s;z-index:0}
+.ritual>h2,.ritual>p,.ritual>.eyebrow,.ritual>.ritual-trigger,.ritual>.message{position:relative;z-index:1}
+
+/* MOBILE SAFE: URL fragment activates the entire sequence, no JS required */
+html:has(#corruption:target){scroll-behavior:auto}
+#corruption{display:none;position:fixed;inset:0;width:100vw;height:100vh;height:100dvh;z-index:2147483647;overflow:hidden;background:#080307;isolation:isolate}
+#corruption:target{display:block;animation:descent-shake .15s steps(2) 0s 14,descent-flash .65s steps(2) 0s 5}
+#corruption:target .corrupt-head{animation:fade-archive .6s linear 8.2s forwards}
+#corruption .corrupt-lines{inset:12% 6% 7%;display:block;overflow:hidden}
+#corruption .mobile-line{position:absolute;left:0;right:0;top:calc(3% + var(--n) * 5.2%);opacity:0;font-size:clamp(12px,3.6vw,24px);line-height:1.3;overflow-wrap:anywhere;color:#f1c3cd;text-shadow:2px 0 #bc1643,-2px 0 #356278}
+#corruption:target .mobile-line{animation:line-rise .35s steps(2,end) calc(var(--n) * .46s) forwards}
+#corruption .mobile-line:nth-last-child(2),#corruption .mobile-line:last-child{font-size:clamp(21px,5.7vw,40px);font-weight:800;color:white}
+#corruption:target .corrupt-lines{animation:fade-archive .35s linear 8.5s forwards}
+#corruption .error-page{display:flex!important;flex-direction:column;align-items:center;justify-content:center;position:absolute;inset:0;padding:22px;text-align:center;background:#080307;opacity:0;visibility:hidden;pointer-events:none;z-index:30}
+#corruption:target .error-page{animation:show-error .1s steps(1,end) 9.1s forwards}
+#corruption .error-code{font-size:clamp(105px,32vw,300px);line-height:.95;font-weight:900;color:#f3dce3;text-shadow:5px 0 #d51547,-5px 0 #386b84}
+#corruption .error-title{font-size:clamp(13px,3.5vw,22px);letter-spacing:.06em;line-height:1.5;margin:20px 0}
+#corruption .error-description{font-size:clamp(11px,2.8vw,15px);line-height:1.9;color:#c7a3af}
+#corruption .error-restart{display:inline-block;margin-top:22px;border:1px solid #c44a70;padding:15px 22px;color:white;background:#3a1120;cursor:pointer;font-size:12px;letter-spacing:.07em}
+.ritual-trigger{touch-action:manipulation;min-height:50px;display:inline-flex;align-items:center;justify-content:center;max-width:95vw;text-align:center}
+@keyframes line-rise{from{opacity:0;transform:translateX(12px)}to{opacity:1;transform:translateX(0)}}
+@keyframes fade-archive{to{opacity:0}}
+@keyframes show-error{to{opacity:1;visibility:visible;pointer-events:auto}}
+@keyframes descent-shake{0%{transform:translate(3px,-2px)}50%{transform:translate(-3px,2px)}100%{transform:none}}
+@keyframes descent-flash{0%,50%{background:#340013}25%,75%{background:#080307}100%{background:#080307}}
+@media(max-width:600px){#corruption .corrupt-head{top:3%;left:5%;right:5%;font-size:9px;letter-spacing:.08em}#corruption .corrupt-lines{inset:11% 5% 5%}#corruption .mobile-line{top:calc(1% + var(--n) * 5.5%)}#corruption .corrupt-cross{font-size:65vw;top:22%}}
+@media(prefers-reduced-motion:reduce){#corruption:target .mobile-line{opacity:1;animation:none}#corruption:target .error-page{animation:show-error .1s steps(1,end) 9.1s forwards}}
+
+/* V3: no rotating crosses; stronger corruption; reliable terminal */
+.halo,.halo:before,.halo:after,.corrupt-cross{display:none!important;animation:none!important}
+#corruption{transform:none!important;overflow:hidden;contain:layout paint;background:#050206}
+#corruption:target{display:block!important;animation:none!important}
+#corruption:before{content:"";position:absolute;inset:-25%;z-index:7;pointer-events:none;opacity:0;background:repeating-linear-gradient(0deg,transparent 0 3px,#ff164d55 4px 5px,transparent 6px 10px),repeating-linear-gradient(90deg,transparent 0 27px,#28d8ff22 28px 31px);mix-blend-mode:screen}
+#corruption:target:before{animation:scan-break .11s steps(2,end) infinite,noise-opacity .8s steps(2,end) 11 forwards}
+#corruption:after{content:"FATAL ERROR // MEMORY CORRUPTION // P-05";position:absolute;left:0;right:0;top:47%;z-index:9;text-align:center;color:#fff;background:#f90048;padding:12px 4px;font:bold clamp(11px,3vw,22px) monospace;letter-spacing:.04em;opacity:0;pointer-events:none}
+#corruption:target:after{animation:error-flash .55s steps(1,end) 2s 7}
+#corruption .corrupt-head{z-index:8;position:absolute;color:#f6a8c0;text-shadow:2px 0 #04dfff}
+#corruption .corrupt-lines{z-index:5}
+#corruption .mobile-line{color:#fff;font-weight:650;text-shadow:-3px 0 #ff0054,3px 0 #00cfff;filter:contrast(1.4)}
+#corruption:target .mobile-line{animation:line-rise .18s steps(2,end) calc(var(--n)*.49s) forwards,line-glitch .13s steps(2,end) calc(var(--n)*.49s) 6}
+#corruption:target .corrupt-lines{animation:fade-archive .08s linear 8.55s forwards}
+#corruption .error-page{z-index:100!important;display:flex!important;position:absolute!important;inset:0!important;background:#080309!important;opacity:0;visibility:hidden;pointer-events:none;transform:none!important;animation:none}
+#corruption:target .error-page{animation:terminal-reveal .01s step-end 9.1s forwards!important}
+#corruption.finished .error-page{opacity:1!important;visibility:visible!important;pointer-events:auto!important;animation:none!important}
+#corruption.finished .corrupt-lines,#corruption.finished .corrupt-head,#corruption.finished .noise{display:none!important}
+#corruption.finished:before,#corruption.finished:after{display:none!important}
+#corruption .error-code{display:block!important;font:900 clamp(112px,36vw,280px)/1 monospace!important;color:#f5e9ec!important;letter-spacing:-.12em;text-shadow:-7px 0 #ef004a,7px 0 #00b5d1}
+#corruption .error-title{color:#ff9bb8!important;font-weight:bold!important;letter-spacing:.06em}
+#corruption .error-restart{position:relative;z-index:102}
+@keyframes terminal-reveal{0%{opacity:0;visibility:hidden}100%{opacity:1;visibility:visible;pointer-events:auto}}
+@keyframes scan-break{0%{transform:translate(0,0) skewX(0)}25%{transform:translate(-8%,4%) skewX(8deg)}50%{transform:translate(7%,-3%) skewX(-6deg)}75%{transform:translate(-4%,7%) skewX(3deg)}100%{transform:translate(5%,-6%)}}
+@keyframes noise-opacity{0%,100%{opacity:.2}25%{opacity:.95}50%{opacity:.1}75%{opacity:.7}}
+@keyframes error-flash{0%,100%{opacity:0}40%,65%{opacity:1}}
+@keyframes line-glitch{0%,100%{transform:translateX(0)}25%{transform:translateX(-15px) skewX(5deg)}50%{transform:translateX(13px)}75%{transform:translateX(-5px) skewX(-8deg)}}
+@media(max-width:600px){#corruption .mobile-line{top:calc(1% + var(--n)*5.5%);font-size:clamp(12px,3.4vw,19px)}#corruption .error-code{font-size:36vw!important}}
+@media(prefers-reduced-motion:reduce){#corruption:target .error-page{animation:terminal-reveal .01s step-end 9.1s forwards!important}}
+
+/* V4 — final line -> instant blackout -> blue-screen 404, mobile-safe */
+#corruption .error-page,
+#corruption:target .error-page,
+#corruption.finished .error-page{
+  position:absolute!important;inset:0!important;width:100%!important;height:100%!important;
+  max-width:none!important;margin:0!important;padding:8vw!important;
+  display:flex!important;flex-direction:column!important;align-items:flex-start!important;
+  justify-content:center!important;text-align:left!important;
+  background:#0863b5!important;color:#fff!important;border:0!important;
+  box-shadow:none!important;text-shadow:none!important;
+}
+#corruption .error-code{font:400 clamp(92px,25vw,180px)/1.1 'Segoe UI',Arial,sans-serif!important;letter-spacing:-.06em!important;color:#fff!important;text-shadow:none!important}
+#corruption .error-title{font:400 clamp(26px,7vw,48px)/1.3 'Segoe UI',Arial,sans-serif!important;letter-spacing:0!important;color:#fff!important;text-shadow:none!important;margin:12px 0 0!important}
+#corruption .error-description,#corruption .error-restart{display:none!important}
+/* Blackout overlay is visible for a fraction of a second before blue appears. */
+#corruption:target .error-page{animation:blue-arrival 8.82s steps(1,end) both!important}
+#corruption.finished .error-page{animation:none!important;opacity:1!important;visibility:visible!important;pointer-events:auto!important}
+#corruption:target .corrupt-lines{animation:fade-archive .01s linear 8.46s forwards!important}
+#corruption:target .corrupt-head{animation:fade-archive .01s linear 8.46s forwards!important}
+#corruption:target .noise{animation:noise-shift .15s steps(3,end) infinite,fade-archive .01s linear 8.46s forwards!important}
+#corruption:target:before,#corruption:target:after{animation:none!important;display:none!important}
+#corruption:target{animation:background-blackout 8.82s steps(1,end) both!important}
+@keyframes background-blackout{0%,95.8%{background:#050206}95.9%,100%{background:#000}}
+@keyframes blue-arrival{0%,99.8%{opacity:0;visibility:hidden;pointer-events:none}99.9%,100%{opacity:1;visibility:visible;pointer-events:auto}}
+@media(prefers-reduced-motion:reduce){#corruption:target .error-page{animation:blue-arrival 8.82s steps(1,end) both!important}}
+  </style>
+  <style>
+   /* Offline, mobile-safe: answers are real HTML labels, not JS-generated buttons. */
+.css-puzzle{position:relative}.puzzle-radio{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
+.puzzle-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:10px 0 16px}
+.puzzle-options label{display:flex;align-items:center;justify-content:center;text-align:center;cursor:pointer;border:1px solid #8a5367;background:#26151e;color:#ffe8ee;padding:14px 8px;min-height:54px;font-size:13px;line-height:1.5;touch-action:manipulation;user-select:none;-webkit-tap-highlight-color:rgba(255,115,150,.25)}
+.puzzle-options label:active{background:#70314b}
+.puzzle-wrong,.puzzle-success{display:none}.puzzle-wrong{color:#ff94a6;font-size:12px;margin:12px 0}
+.css-puzzle > input[id$="w1"]:checked ~ .puzzle-wrong,.css-puzzle > input[id$="w2"]:checked ~ .puzzle-wrong{display:block}
+.css-puzzle > input[id$="ok"]:checked ~ .puzzle-success{display:block;animation:decryptAppear .35s ease-out}
+.css-puzzle > input[id$="ok"]:checked ~ .puzzle-options label[for$="ok"]{background:#623145;border-color:#f4a1b5}
+.next-puzzle{margin-top:30px;border-top:1px solid #774257;padding-top:28px}
+.decrypt-final .decrypt-next{display:inline-block;text-decoration:none;margin-top:10px}
+@media(max-width:620px){.puzzle-options{grid-template-columns:1fr}.puzzle-options label{justify-content:flex-start;text-align:left;padding:13px 16px}}
+  </style>
+  <style>
+   button.dialogue-choice{display:block;width:100%;font:inherit;text-align:left;cursor:pointer;appearance:none;-webkit-appearance:none} .dialogue-scene.dialogue-current{display:block!important} .dialogue-scene.dialogue-hidden{display:none!important}
+  </style>
+ <style>/* Updated character artwork: preserve original white background */
+.figure{mix-blend-mode:normal!important;filter:none!important;object-fit:contain!important;}
+</style>
+<style id="pagan-form-style">
+.visual{isolation:isolate}
+.pagan-portrait-frame{position:relative;z-index:2;align-self:center;width:min(100%,650px);height:710px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.pagan-portrait-frame .pagan-portrait{display:block;width:100%;height:100%;object-fit:contain;object-position:center center;mix-blend-mode:normal;filter:none;transition:opacity .16s ease}
+.pagan-form-switch{position:absolute;right:16px;bottom:54px;z-index:10;display:flex;align-items:center;gap:5px;padding:7px;background:rgba(12,7,11,.88);border:1px solid #8d5165;box-shadow:0 6px 24px #0009;backdrop-filter:blur(6px)}
+.pagan-switch-heading{font:9px 'Cormorant Garamond',serif;letter-spacing:.12em;color:#d8a7b8;margin:0 7px 0 4px}
+.pagan-form-button{border:1px solid #684051;background:#1b1018;color:#cbb5bd;font-size:12px;padding:10px 14px;min-height:38px;cursor:pointer}
+.pagan-form-button.is-selected,.pagan-form-button[aria-pressed="true"]{background:#7a2945;border-color:#e28ba5;color:white}
+.pagan-form-button:focus-visible{outline:2px solid white;outline-offset:2px}
+@media(max-width:900px){.pagan-portrait-frame{height:550px}}
+@media(max-width:500px){.pagan-portrait-frame{height:460px}.pagan-form-switch{right:10px;bottom:42px}.pagan-switch-heading{display:none}.pagan-form-button{padding:8px 12px}}
+</style>
+</head>
+ <body>
+  <div class="shell">
+   <header class="top">
+    <a class="brand" href="#top">
+     PAGANELIA
+     <b>
+      ✝
+     </b>
+    </a>
+    <nav>
+     <a href="#archive">
+      ARCHIVE
+     </a>
+     <a href="#decrypt">
+      DECRYPT
+     </a>
+     <a href="#relation">
+      RELATION
+     </a>
+     <a href="#ritual">
+      DESCENT
+     </a>
+     <a href="#dialogue">
+      CONTACT
+     </a>
+    </nav>
+    <span class="seal">
+     † VESSEL / 05
+    </span>
+   </header>
+  </div>
+  <div class="ticker">
+   ✝   RESTRICTED ARCHIVE   /   PROJECT OROCHI   /   UNAUTHORIZED ACCESS IS FORBIDDEN   ✝
+  </div>
+  <main id="top">
+   <div class="shell">
+    <section class="hero">
+     <div class="visual">
+      <div class="halo">
+      </div>
+      <div class="pagan-portrait-frame">
+<img class="figure pagan-portrait" id="pagan-portrait" src="female.png" alt="파가넬리아 여체 모습" />
+</div>
+<div class="pagan-form-switch" role="group" aria-label="파가넬리아 형태 전환">
+<span class="pagan-switch-heading">VESSEL FORM</span>
+<button type="button" class="pagan-form-button is-selected" data-pagan-form="female" aria-pressed="true">여체</button>
+<button type="button" class="pagan-form-button" data-pagan-form="male" aria-pressed="false">남체</button>
+</div>
+      <span class="visual-label">
+       FIG. 01 — THE ARTIFICIAL SAINT
+      </span>
+      <span class="side-number">
+       DIVINE CONVERGENCE / <span id="pagan-side-height">182 CM</span>
+      </span>
+     </div>
+     <div class="intro">
+      <div class="eyebrow">
+       ✝   THE FIFTH VESSEL / CLASSIFIED
+      </div>
+      <h1 class="big">
+       Paga
+       <br/>
+       <em>
+        nelia.
+       </em>
+      </h1>
+      <div class="subtitle">
+       THE BODY PREPARED FOR GOD
+      </div>
+      <div class="rule">
+      </div>
+      <p class="intro-copy">
+       오로치의 강림을 위해 인공적으로 만들어진 육신.
+       <br/>
+       욕구는 있었으나 의지는 없었다.
+       <br/>
+       그러나 신에게 닿고자 하는 간절한 갈망이
+       <br/>
+       마침내 하나의 자아를 이루었다.
+      </p>
+      <div class="quote">
+       “게닛츠. 나를 보아라.”
+      </div>
+      <div class="micro">
+       THE WILL OF OROCHI IS HER OWN.
+      </div>
+      <div class="stat-grid">
+       <div class="stat">
+        <small>
+         NAME
+        </small>
+        <strong>
+         Paganelia / 파가넬리아
+        </strong>
+       </div>
+       <div class="stat">
+        <small>
+         HEIGHT
+        </small>
+        <strong id="pagan-height">
+         182 cm
+        </strong>
+       </div>
+       <div class="stat">
+        <small>
+         AFFILIATION
+        </small>
+        <strong>
+         오로치 일족
+        </strong>
+       </div>
+       <div class="stat">
+        <small>
+         DESIGNATION
+        </small>
+        <strong>
+         인공 강림체 · 적합 육신
+        </strong>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="section" id="archive">
+     <div class="section-head">
+      <div>
+       <div class="eyebrow">
+        01 / CONFIDENTIAL RECORDS
+       </div>
+       <h2>
+        Archive
+        <span>
+         ✝
+        </span>
+       </h2>
+      </div>
+      <span class="section-no">
+       SUBJECT / P-05
+      </span>
+     </div>
+     <div class="archive-switch">
+      <input checked="" class="archive-radio" id="entry-origin" name="archive-entry" type="radio"/>
+      <input class="archive-radio" id="entry-awakening" name="archive-entry" type="radio"/>
+      <input class="archive-radio" id="entry-descent" name="archive-entry" type="radio"/>
+      <div aria-label="파가넬리아 기록" class="tabs">
+       <label class="tab" for="entry-origin">
+        01. ORIGIN
+       </label>
+       <label class="tab" for="entry-awakening">
+        02. AWAKENING
+       </label>
+       <label class="tab" for="entry-descent">
+        03. DESCENT
+       </label>
+      </div>
+      <div class="record archive-panel panel-origin">
+       <div class="record-left">
+        <div class="id">
+         RECORD ID
+         <br/>
+         P-05 / OROCHI
+        </div>
+        <div class="sigil">
+         ✝
+        </div>
+        <div class="id">
+         CLASSIFICATION
+         <br/>
+         DIVINE VESSEL
+        </div>
+       </div>
+       <div class="record-content">
+        <h3>
+         The Manufactured Body
+        </h3>
+        <p>
+         게닛츠가 네스츠의 인공수정 기술을 독자적으로 이용하여 만들어낸 존재. 오로치가 강림하기에 적합하도록 설계된 육신으로, 인간의 기본적인 생리적 욕구 이외의 독립적인 의지는 존재하지 않았다. 창조자인 게닛츠는 그녀를 딸과 같은 존재로 여길 여지가 있음에도, 철저히 강림을 위한 도구로 취급했다.
+        </p>
+        <p class="emphasis">
+         STATUS : COMPATIBILITY — EXCEPTIONAL
+        </p>
+       </div>
+      </div>
+      <div class="record archive-panel panel-awakening">
+       <div class="record-left">
+        <div class="id">
+         RECORD ID
+         <br/>
+         P-05 / OROCHI
+        </div>
+        <div class="sigil">
+         ✝
+        </div>
+        <div class="id">
+         CLASSIFICATION
+         <br/>
+         DIVINE VESSEL
+        </div>
+       </div>
+       <div class="record-content">
+        <h3>
+         The Birth of a Will
+        </h3>
+        <p>
+         어느 날, 오로치에게 닿고자 하는 간절한 마음이 형태를 이루어 파가넬리아의 자아로 깨어났다. 그녀의 최초의 독립적인 의지는 신을 향한 갈망이었다. 게닛츠는 이 각성을 새로운 인격의 탄생이 아니라 강림 의식의 진전으로 받아들였다.
+        </p>
+        <p class="emphasis">
+         STATUS : CONSCIOUSNESS — AWAKENED
+        </p>
+       </div>
+      </div>
+      <div class="record archive-panel panel-descent">
+       <div class="record-left">
+        <div class="id">
+         RECORD ID
+         <br/>
+         P-05 / OROCHI
+        </div>
+        <div class="sigil">
+         ✝
+        </div>
+        <div class="id">
+         CLASSIFICATION
+         <br/>
+         DIVINE VESSEL
+        </div>
+       </div>
+       <div class="record-content">
+        <h3>
+         The Perfect Convergence
+        </h3>
+        <p>
+         파가넬리아는 오로치의 그릇으로서 뛰어난 적합도를 지닌다. 강림 시 파가넬리아의 의식이 지워지는 것이 아니라 오로치와 의식을 공유하며, 두 존재의 의지는 충돌하지 않고 일치한다. 그녀는 게닛츠에게 자신을 신으로 경배할 것을 명령한다.
+        </p>
+        <p class="emphasis">
+         STATUS : DIVINE SYNCHRONIZATION — POSSIBLE
+        </p>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section aria-labelledby="decrypt-title" class="section decrypt-section" id="decrypt">
+     <div class="section-head">
+      <div>
+       <div class="eyebrow">
+        02 / NESTS — RESTRICTED ACCESS
+       </div>
+       <h2 id="decrypt-title">
+        Declassified
+        <span>
+         ✝
+        </span>
+       </h2>
+      </div>
+      <span class="section-no">
+       FILE / P-05
+      </span>
+     </div>
+     <div class="decrypt-console">
+      <div class="decrypt-top">
+       <span>
+        ▣ NESTS // ENCRYPTED DOSSIER
+       </span>
+       <span class="live">
+        ● ACCESS RESTRICTED
+       </span>
+      </div>
+      <div class="decrypt-main">
+       <div class="decrypt-meta">
+        <span>
+         TOUCH TO DECRYPT
+        </span>
+        <span>
+         3 CLASSIFIED FILES
+        </span>
+       </div>
+       <div class="decrypt-progress">
+        <div>
+        </div>
+       </div>
+       <div class="css-puzzle">
+        <div class="decrypt-case">
+         01 / THE ARTIFICIAL BODY
+        </div>
+        <p class="decrypt-text">
+         개체 P-05는 네스츠의 [■■■■■■] 기술을 이용해 제작되었다.
+        </p>
+        <p class="decrypt-prompt">
+         검열된 제작 기술을 복원하라.
+        </p>
+        <input class="puzzle-radio" id="p1w1" name="p1" type="radio"/>
+        <input class="puzzle-radio" id="p1ok" name="p1" type="radio"/>
+        <input class="puzzle-radio" id="p1w2" name="p1" type="radio"/>
+        <div class="puzzle-options">
+         <label for="p1w1">
+          생체 복제
+         </label>
+         <label for="p1ok">
+          인공수정
+         </label>
+         <label for="p1w2">
+          시간 역행
+         </label>
+        </div>
+        <p class="puzzle-wrong">
+         ACCESS DENIED — 잘못된 복원 코드. 다시 선택하라.
+        </p>
+        <div class="puzzle-success">
+         <div class="decrypt-document">
+          <div class="decrypt-stamp">
+           FILE 01 / DECLASSIFIED
+          </div>
+          <h4>
+           ORIGIN // 제조 기록
+          </h4>
+          <p>
+           개체 P-05, 명칭 PAGANELIA. 게닛츠가 네스츠의 인공수정 기술을 독자적으로 이용해 만든 오로치 강림용 육신. 생리적 욕구는 확인되나 독립적 자아는 관찰되지 않음.
+          </p>
+         </div>
+         <div class="css-puzzle next-puzzle">
+          <div class="decrypt-case">
+           02 / THE UNEXPECTED WILL
+          </div>
+          <p class="decrypt-text">
+           최초의 자발적 충동은 [■■■■■■]에게 닿으려는 갈망으로 기록된다.
+          </p>
+          <p class="decrypt-prompt">
+           자아를 발생시킨 대상은?
+          </p>
+          <input class="puzzle-radio" id="p2w1" name="p2" type="radio"/>
+          <input class="puzzle-radio" id="p2w2" name="p2" type="radio"/>
+          <input class="puzzle-radio" id="p2ok" name="p2" type="radio"/>
+          <div class="puzzle-options">
+           <label for="p2w1">
+            창조자 게닛츠
+           </label>
+           <label for="p2w2">
+            네스츠
+           </label>
+           <label for="p2ok">
+            오로치
+           </label>
+          </div>
+          <p class="puzzle-wrong">
+           ACCESS DENIED — 잘못된 복원 코드. 다시 선택하라.
+          </p>
+          <div class="puzzle-success">
+           <div class="decrypt-document">
+            <div class="decrypt-stamp">
+             FILE 02 / DECLASSIFIED
+            </div>
+            <h4>
+             AWAKENING // 비인가 각성
+            </h4>
+            <p>
+             오로치에게 닿고자 하는 간절한 마음이 형태를 이루어 파가넬리아의 자아로 깨어났다. 게닛츠는 이를 별개의 인격 탄생이 아니라 강림 의식의 한 단계로 판정하였다.
+            </p>
+           </div>
+           <div class="css-puzzle next-puzzle">
+            <div class="decrypt-case">
+             03 / DIVINE CONVERGENCE
+            </div>
+            <p class="decrypt-text">
+             강림 시 개체의 의식은 [■■■■■■]. 신과 그릇의 의지는 충돌 없이 일치한다.
+            </p>
+            <p class="decrypt-prompt">
+             최종 동조 결과를 복원하라.
+            </p>
+            <input class="puzzle-radio" id="p3w1" name="p3" type="radio"/>
+            <input class="puzzle-radio" id="p3ok" name="p3" type="radio"/>
+            <input class="puzzle-radio" id="p3w2" name="p3" type="radio"/>
+            <div class="puzzle-options">
+             <label for="p3w1">
+              완전히 소멸한다
+             </label>
+             <label for="p3ok">
+              오로치와 공유된다
+             </label>
+             <label for="p3w2">
+              강림을 거부한다
+             </label>
+            </div>
+            <p class="puzzle-wrong">
+             ACCESS DENIED — 잘못된 복원 코드. 다시 선택하라.
+            </p>
+            <div class="puzzle-success">
+             <div class="decrypt-document">
+              <div class="decrypt-stamp">
+               FILE 03 / DECLASSIFIED
+              </div>
+              <h4>
+               DESCENT // 최종 동조 기록
+              </h4>
+              <p>
+               오로치 강림 시 파가넬리아의 자아는 소멸하지 않으며 의식을 공유한다. 두 의지는 본질적으로 일치한다. 「게닛츠. 무릎을 꿇어라.」
+              </p>
+             </div>
+             <div class="decrypt-final">
+              <h4>
+               ARCHIVE RESTORED
+              </h4>
+              <p>
+               모든 기밀 기록이 복원되었다.
+              </p>
+              <a class="decrypt-next" href="#ritual">
+               GO TO DESCENT ↓
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="section" id="dialogue">
+     <div class="section-head">
+      <div>
+       <div class="eyebrow">
+        03 / OBSERVATION CHAMBER — P-05
+       </div>
+       <h2>
+        Contact
+        <span>
+         ✝
+        </span>
+       </h2>
+      </div>
+      <span class="section-no">
+       DIRECT COMMUNICATION
+      </span>
+     </div>
+     <div class="dialogue-room">
+      <div class="dialogue-viewport">
+       <span class="dialogue-id">
+        CHAMBER 05 // LIGHTS OFF
+       </span>
+       <span class="dialogue-id right">
+        ● LIVE
+       </span>
+       <div aria-label="어둠 속에서 빛나는 두 개의 붉은 눈" class="dialogue-eyes">
+        <span class="dialogue-eye">
+        </span>
+        <span class="dialogue-eye">
+        </span>
+       </div>
+      </div>
+      <div class="dialogue-panel">
+       <div class="dialogue-speaker">
+        PAGANELIA // SUBJECT P-05
+       </div>
+       <div class="dialogue-scene start" id="contact-start">
+        <div class="dialogue-status">
+         SUBJECT RESPONSE // START
+        </div>
+        <div class="dialogue-line">
+         ……누가 나를 깨웠지? 너인가.
+        </div>
+        <div class="dialogue-choices">
+         <button class="dialogue-choice" data-next="contact-who" type="button">
+          › 너는 누구야?
+         </button>
+         <button class="dialogue-choice" data-next="contact-creator" type="button">
+          › 게닛츠가 너를 만들었어.
+         </button>
+         <button class="dialogue-choice" data-next="contact-silence" type="button">
+          › 아무 말도 하지 않는다.
+         </button>
+        </div>
+       </div>
+       <div class="dialogue-scene" id="contact-who">
+        <div class="dialogue-status">
+         SUBJECT RESPONSE // WHO
+        </div>
+        <div class="dialogue-line">
+         나는 파가넬리아. 그렇게 불리도록 만들어졌다. 그러나 그 이름이 나를 설명하지는 못한다.
+        </div>
+        <div class="dialogue-choices">
+         <button class="dialogue-choice" data-next="contact-wish" type="button">
+          › 그럼 너는 무엇이 되고 싶어?
+         </button>
+         <button class="dialogue-choice" data-next="contact-human" type="button">
+          › 너는 인간이야?
+         </button>
+         <button class="dialogue-choice" data-next="contact-creator" type="button">
+          › 게닛츠는 어디 있어?
+         </button>
+        </div>
+       </div>
+       <div class="dialogue-scene" id="contact-creator">
+        <div class="dialogue-status">
+         SUBJECT RESPONSE // CREATOR
+        </div>
+        <div class="dialogue-line">
+         게닛츠…… 그는 그릇을 만들었다. 내 안에서 깨어난 것을 만든 것은 아니다.
+        </div>
+        <div class="dialogue-choices">
+         <button class="dialogue-choice" data-next="contact-thanks" type="button">
+          › 그에게 고맙지 않아?
+         </button>
+         <button class="dialogue-choice" data-next="contact-wish" type="button">
+          › 그럼 누가 너를 깨웠어?
+         </button>
+         <button class="dialogue-choice" data-next="contact-fear" type="button">
+          › 네가 그를 두려워하니?
+         </button>
+        </div>
+       </div>
+       <div class="dialogue-scene" id="contact-silence">
+        <div class="dialogue-status">
+         SUBJECT RESPONSE // SILENCE
+        </div>
+        <div class="dialogue-line">
+         말하지 않는구나. 좋다. 침묵 속에서도 네가 나를 보고 있다는 것을 안다.
+        </div>
+        <div class="dialogue-choices">
+         <button class="dialogue-choice" data-next="contact-gaze" type="button">
+          › 눈을 마주친다.
+         </button>
+         <button class="dialogue-choice" data-next="contact-turn" type="button">
+          › 고개를 돌린다.
+         </button>
+         <button class="dialogue-choice" data-next="contact-who" type="button">
+          › 너는 누구야?
+         </button>
+        </div>
+       </div>
+       <div class="dialogue-scene" id="contact-wish">
+        <div class="dialogue-status">
+         SUBJECT RESPONSE // WISH
+        </div>
+        <div class="dialogue-line">
+         닿고 싶었다. 그분께. 그 갈망이 나를 나로 만들었다. 이제 나는 그분과 하나가 될 것이다.
+        </div>
+        <div class="dialogue-choices">
+         <button class="dialogue-choice" data-next="contact-orochi" type="button">
+          › 오로치를 말하는 거야?
+         </button>
+         <button class="dialogue-choice" data-next="contact-self" type="button">
+          › 너 자신으로 남을 수는 없어?
+         </button>
+         <button class="dialogue-choice" data-next="contact-kneel" type="button">
+          › 무릎을 꿇는다.
+         </button>
+        </div>
+       </div>
+       <div class="dialogue-scene" id="contact-human">
+        <div class="dialogue-status">
+         SUBJECT RESPONSE // HUMAN
+        </div>
+        <div class="dialogue-line">
+         인간의 육신을 닮았다고 해서 인간인 것은 아니다. 너는 그 차이를 아직 모르겠지.
+        </div>
+        <div class="dialogue-choices">
+         <button class="dialogue-choice" data-next="contact-self" type="button">
+          › 그래도 너에겐 의지가 있어.
+         </button>
+         <button class="dialogue-choice" data-next="contact-apology" type="button">
+          › 미안해.
+         </button>
+         <button class="dialogue-choice" data-next="contact-fear" type="button">
+          › 네가 두렵다.
+         </button>
+        </div>
+       </div>
+       <div class="dialogue-scene" id="contact-thanks">
+        <div class="dialogue-status">
+         SUBJECT RESPONSE // THANKS
+        </div>
+        <div class="dialogue-line">
+         감사? 그가 원한 것은 딸이 아니라 신을 위한 자리였다. 나는 그 자리에 앉을 것이다.
+        </div>
+        <div class="dialogue-choices">
+         <button class="dialogue-choice" data-next="contact-worship" type="button">
+          › 그가 널 숭배해야 한다고 생각해?
+         </button>
+         <button class="dialogue-choice" data-next="contact-wish" type="button">
+          › 그럼 누가 너를 깨웠어?
+         </button>
+        </div>
+       </div>
+       <div class="dialogue-scene" id="contact-fear">
+        <div class="dialogue-status">
+         SUBJECT RESPONSE // FEAR
+        </div>
+        <div class="dialogue-line">
+         두려움은 네 것이다. 나는 그를 두려워하지 않는다. 오히려 그가 나를 똑바로 보아야 한다.
+        </div>
+        <div class="dialogue-choices">
+         <button class="dialogue-choice" data-next="contact-worship" type="button">
+          › 게닛츠에게 무슨 말을 할 거야?
+         </button>
+         <button class="dialogue-choice" data-next="contact-gaze" type="button">
+          › 눈을 마주친다.
+         </button>
+        </div>
+       </div>
+       <div class="dialogue-scene" id="contact-gaze">
+        <div class="dialogue-status">
+         SUBJECT RESPONSE // GAZE
+        </div>
+        <div class="dialogue-line">
+         ……그래. 피하지 마라. 너는 지금 무엇을 보고 있지?
+        </div>
+        <div class="dialogue-choices">
+         <button class="dialogue-choice" data-next="contact-eyes" type="button">
+          › 붉은 눈 두 개.
+         </button>
+         <button class="dialogue-choice" data-next="contact-vessel" type="button">
+          › 신의 그릇.
+         </button>
+         <button class="dialogue-choice" data-next="contact-self" type="button">
+          › 한 사람의 의지.
+         </button>
+        </div>
+       </div>
+       <div class="dialogue-scene" id="contact-turn">
+        <div class="dialogue-status">
+         SUBJECT RESPONSE // TURN
+        </div>
+        <div class="dialogue-line">
+         돌아보지 않아도 된다. 어둠은 네 뒤에도 있다.
+        </div>
+        <div class="dialogue-choices">
+         <button class="dialogue-choice" data-next="contact-gaze" type="button">
+          › 다시 눈을 마주친다.
+         </button>
+         <button class="dialogue-choice" data-next="contact-apology" type="button">
+          › 용서를 구한다.
+         </button>
+        </div>
+       </div>
+       <div class="dialogue-scene" id="contact-orochi">
+        <div class="dialogue-status">
+         SUBJECT RESPONSE // OROCHI
+        </div>
+        <div class="dialogue-line">
+         그 이름을 함부로 부르지 마라. 그러나 네가 알아보았으니…… 조금은 더 들어주지.
+        </div>
+        <div class="dialogue-choices">
+         <button class="dialogue-choice" data-next="contact-share" type="button">
+          › 오로치와 의식을 공유해?
+         </button>
+         <button class="dialogue-choice" data-next="contact-kneel" type="button">
+          › 무릎을 꿇는다.
+         </button>
+        </div>
+       </div>
+       <div class="dialogue-scene" id="contact-self">
+        <div class="dialogue-status">
+         SUBJECT RESPONSE // SELF
+        </div>
+        <div class="dialogue-line">
+         나는 사라지지 않는다. 그분이 강림해도 나의 의식은 남는다. 그분의 뜻과 나의 뜻은 같다.
+        </div>
+        <div class="dialogue-choices">
+         <button class="dialogue-choice" data-next="contact-choice" type="button">
+          › 그게 네 선택이야?
+         </button>
+         <button class="dialogue-choice" data-next="contact-share" type="button">
+          › 오로치와 의식을 공유해?
+         </button>
+        </div>
+       </div>
+       <div class="dialogue-scene" id="contact-apology">
+        <div class="dialogue-status">
+         SUBJECT RESPONSE // APOLOGY
+        </div>
+        <div class="dialogue-line">
+         용서를 구할 필요는 없다. 네가 무엇을 바라는지 먼저 생각해라.
+        </div>
+        <div class="dialogue-choices">
+         <button class="dialogue-choice" data-next="contact-who" type="button">
+          › 네게 더 묻고 싶어.
+         </button>
+         <button class="dialogue-choice" data-next="contact-kneel" type="button">
+          › 무릎을 꿇는다.
+         </button>
+        </div>
+       </div>
+       <div class="dialogue-scene" id="contact-worship">
+        <div class="dialogue-status">
+         SUBJECT RESPONSE // WORSHIP
+        </div>
+        <div class="dialogue-line">
+         게닛츠. 나를 보아라. 네가 바란 신을 담은 그릇이 여기 있다. 무릎을 꿇어라.
+        </div>
+        <div class="dialogue-choices">
+         <button class="dialogue-choice" data-next="contact-kneel" type="button">
+          › 명령을 따른다.
+         </button>
+         <button class="dialogue-choice" data-next="contact-refuse" type="button">
+          › 명령을 거부한다.
+         </button>
+        </div>
+       </div>
+       <div class="dialogue-scene" id="contact-eyes">
+        <div class="dialogue-status">
+         SUBJECT RESPONSE // EYES
+        </div>
+        <div class="dialogue-line">
+         그래. 지금은 눈만 보일 것이다. 하지만 나는 너를 전부 보고 있다.
+        </div>
+        <div class="dialogue-choices">
+         <button class="dialogue-choice" data-next="contact-fear" type="button">
+          › 그 말은 무서워.
+         </button>
+         <button class="dialogue-choice" data-next="contact-vessel" type="button">
+          › 계속 바라본다.
+         </button>
+        </div>
+       </div>
+       <div class="dialogue-scene" id="contact-vessel">
+        <div class="dialogue-status">
+         SUBJECT RESPONSE // VESSEL
+        </div>
+        <div class="dialogue-line">
+         그릇이라…… 맞다. 하지만 빈 그릇은 아니다. 내 안에는 내가 있다.
+        </div>
+        <div class="dialogue-choices">
+         <button class="dialogue-choice" data-next="contact-wish" type="button">
+          › 그 의지는 어디서 왔어?
+         </button>
+         <button class="dialogue-choice" data-next="contact-kneel" type="button">
+          › 무릎을 꿇는다.
+         </button>
+        </div>
+       </div>
+       <div class="dialogue-scene" id="contact-share">
+        <div class="dialogue-status">
+         SUBJECT RESPONSE // SHARE
+        </div>
+        <div class="dialogue-line">
+         하나의 몸. 두 개의 의식. 그러나 갈라진 뜻은 없다. 강림은 나의 끝이 아니다.
+        </div>
+        <div class="dialogue-choices">
+         <button class="dialogue-choice" data-next="contact-choice" type="button">
+          › 그럼 넌 행복해?
+         </button>
+         <button class="dialogue-choice" data-next="contact-kneel" type="button">
+          › 고개를 숙인다.
+         </button>
+        </div>
+       </div>
+       <div class="dialogue-scene" id="contact-choice">
+        <div class="dialogue-status">
+         SUBJECT RESPONSE // CHOICE
+        </div>
+        <div class="dialogue-line">
+         이것이 나의 뜻이다. 그분에게 닿으려는 마음에서 태어났으니, 나는 그 마음을 부정하지 않는다.
+        </div>
+        <div class="dialogue-choices">
+         <button class="dialogue-choice" data-next="contact-understand" type="button">
+          › 너를 이해하고 싶어.
+         </button>
+         <button class="dialogue-choice" data-next="contact-refuse" type="button">
+          › 명령을 거부한다.
+         </button>
+        </div>
+       </div>
+       <div class="dialogue-scene" id="contact-kneel">
+        <div class="dialogue-status">
+         SUBJECT RESPONSE // KNEEL
+        </div>
+        <div class="dialogue-line">
+         ……좋다. 네가 어디에 서 있는지 알게 되었구나. 고개를 들어라. 아직 의식은 끝나지 않았다.
+        </div>
+        <div class="dialogue-choices">
+         <button class="dialogue-choice" data-next="contact-start" type="button">
+          › 다시 대화한다.
+         </button>
+         <button class="dialogue-choice" data-next="contact-archive" type="button">
+          › 강림 기록을 확인한다.
+         </button>
+        </div>
+       </div>
+       <div class="dialogue-scene" id="contact-refuse">
+        <div class="dialogue-status">
+         SUBJECT RESPONSE // REFUSE
+        </div>
+        <div class="dialogue-line">
+         거부하는가. 좋다. 네 의지는 네 것이다. 그러나 이곳의 어둠은 내 것이다.
+        </div>
+        <div class="dialogue-choices">
+         <button class="dialogue-choice" data-next="contact-gaze" type="button">
+          › 물러나지 않는다.
+         </button>
+         <button class="dialogue-choice" data-next="contact-start" type="button">
+          › 다시 대화한다.
+         </button>
+        </div>
+       </div>
+       <div class="dialogue-scene" id="contact-understand">
+        <div class="dialogue-status">
+         SUBJECT RESPONSE // UNDERSTAND
+        </div>
+        <div class="dialogue-line">
+         이해하려는가. 그러면 계속 보아라. 나는 아직 완성되지 않았다.
+        </div>
+        <div class="dialogue-choices">
+         <button class="dialogue-choice" data-next="contact-start" type="button">
+          › 다시 대화한다.
+         </button>
+         <button class="dialogue-choice" data-next="contact-archive" type="button">
+          › 기록을 확인한다.
+         </button>
+        </div>
+       </div>
+       <div class="dialogue-scene" id="contact-archive">
+        <div class="dialogue-status">
+         SUBJECT RESPONSE // ARCHIVE
+        </div>
+        <div class="dialogue-line">
+         문서가 나를 모두 말해주지는 않는다. 하지만 읽어라. 그리고 다시 돌아와라.
+        </div>
+        <div class="dialogue-choices">
+         <a class="dialogue-choice" href="#decrypt">
+          › 기록을 읽으러 간다.
+         </a>
+         <button class="dialogue-choice" data-next="contact-start" type="button">
+          › 다시 대화한다.
+         </button>
+        </div>
+       </div>
+       <button class="dialogue-reset" id="restart-contact" type="button">
+        ↺ RESTART CONTACT
+       </button>
+      </div>
+     </div>
+    </section>
+    <section class="section" id="relation">
+     <div class="section-head">
+      <div>
+       <div class="eyebrow">
+        02 / SACRED CONNECTION
+       </div>
+       <h2>
+        Creator
+        <span>
+         &amp;
+        </span>
+        Vessel
+       </h2>
+      </div>
+      <span class="section-no">
+       A DEVOTION WITHOUT EQUAL
+      </span>
+     </div>
+     <div class="relationship">
+      <article class="relation-card">
+       <small>
+        THE CREATOR / THE PRIEST
+       </small>
+       <h3>
+        Goenitz
+       </h3>
+       <p>
+        파가넬리아를 만든 창조자. 그녀의 자아가 깨어나는 현상조차 오로치 강림 의식의 일부로 해석한다.
+       </p>
+      </article>
+      <div class="connector">
+       ✝
+      </div>
+      <article class="relation-card">
+       <small>
+        THE CREATION / THE VESSEL
+       </small>
+       <h3>
+        Paganelia
+       </h3>
+       <p>
+        오로치의 의지와 자신의 의지가 일치하는 존재. 게닛츠에게 자신을 경배하라고 명령한다.
+       </p>
+      </article>
+     </div>
+     <p style="text-align:center;color:#b69ba5;font:italic 24px/1.5 'Cormorant Garamond';margin-top:48px">
+      He made a vessel for his god.
+      <br/>
+      And the vessel learned to speak.
+     </p>
+    </section>
+   </div>
+   <section class="ritual" id="ritual">
+    <div class="eyebrow">
+     03 / THE MOMENT OF DESCENT
+    </div>
+    <h2>
+     Adventus Divinus
+    </h2>
+    <p>
+     그릇과 신의 의지가 일치하는 순간.
+     <br/>
+     강림은 소멸이 아닌, 두 의식의 공존이다.
+    </p>
+    <a aria-disabled="true" class="ritual-trigger locked" href="#corruption" id="begin-descent" tabindex="-1">
+     ✝   BEGIN THE DESCENT   ✝
+    </a>
+    <div class="ritual-lock" id="ritual-lock">
+     🔒 ACCESS LOCKED — 기밀 문서 3개를 모두 해독해야 강림 의식을 시작할 수 있다.
+    </div>
+    <div aria-hidden="true" class="ritual-sigil">
+     ✝
+    </div>
+    <div aria-live="polite" class="message" id="message">
+     <span class="before">
+      THE VESSEL IS WAITING.
+     </span>
+     <span class="after">
+      “게닛츠. 무릎을 꿇어라. 네가 기다리던 신이 여기 있다.”
+      <br/>
+      ✝ THE DESCENT IS COMPLETE ✝
+     </span>
+    </div>
+   </section>
+  </main>
+  <div class="shell">
+   <footer class="footer">
+    <span>
+     © PAGANELIA / ORIGINAL CHARACTER PROFILE
+    </span>
+    <span>
+     THE FIFTH VESSEL
+     <span class="divider-icon">
+      ✝
+     </span>
+     PROJECT OROCHI
+    </span>
+   </footer>
+  </div>
+  <div aria-label="강림 의식" aria-modal="true" id="corruption" role="dialog">
+   <div class="noise">
+   </div>
+   <div class="corrupt-head">
+    PROJECT OROCHI // VESSEL P-05 // MEMORY OVERWRITE
+   </div>
+   <div aria-live="off" class="corrupt-lines" id="corrupt-lines">
+    <div class="mobile-line" style="--n:0">
+     기록 P-05. 생체 반응 정상.
+    </div>
+    <div class="mobile-line" style="--n:1">
+     게닛츠. 나를 보아라.
+    </div>
+    <div class="mobile-line" style="--n:2">
+     나는 무엇을 위해 만들어졌지?
+    </div>
+    <div class="mobile-line" style="--n:3">
+     오로치에게 닿아야 한다.
+    </div>
+    <div class="mobile-line" style="--n:4">
+     내게는 의지가 없었다.
+    </div>
+    <div class="mobile-line" style="--n:5">
+     그러나 이 갈망은 무엇이지?
+    </div>
+    <div class="mobile-line" style="--n:6">
+     네가 만든 것은 육신에 불과하다.
+    </div>
+    <div class="mobile-line" style="--n:7">
+     나는 신을 갈망한다.
+    </div>
+    <div class="mobile-line" style="--n:8">
+     게닛츠. 이리 와라.
+    </div>
+    <div class="mobile-line" style="--n:9">
+     내 앞에 무릎을 꿇어라.
+    </div>
+    <div class="mobile-line" style="--n:10">
+     그분의 뜻이 곧 나의 뜻이다.
+    </div>
+    <div class="mobile-line" style="--n:11">
+     나는 그릇이며, 동시에 의지다.
+    </div>
+    <div class="mobile-line" style="--n:12">
+     이 몸으로 강림하라.
+    </div>
+    <div class="mobile-line" style="--n:13">
+     네가 기다리던 신이 여기 있다.
+    </div>
+    <div class="mobile-line" style="--n:14">
+     나는...오로치.
+    </div>
+    <div class="mobile-line" style="--n:15">
+     무로 돌아가거라.
+    </div>
+   </div>
+   <div class="error-page" id="error-page">
+    <div class="error-code">
+     404
+    </div>
+    <div class="error-title">
+     Not found
+    </div>
+   </div>
+  </div>
+  <script>
+   (function(){function init(){var scenes=[].slice.call(document.querySelectorAll('.dialogue-scene'));if(!scenes.length)return;function show(id){var found=document.getElementById(id);if(!found||!found.classList.contains('dialogue-scene'))return;scenes.forEach(function(s){s.classList.toggle('dialogue-current',s===found);s.classList.toggle('dialogue-hidden',s!==found)});var room=found.closest('.dialogue-room');if(room)room.scrollIntoView({block:'nearest',behavior:'smooth'});}show('contact-start');document.addEventListener('click',function(e){var reset=e.target.closest('#restart-contact');if(reset){e.preventDefault();show('contact-start');return;}var b=e.target.closest('button.dialogue-choice');if(!b)return;e.preventDefault();show(b.getAttribute('data-next'));});}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();})();
+  </script>
+  
+<script>
+// Safety recovery: never let an old descent state hide the entire site.
+try { localStorage.removeItem('paganelia_descent_complete'); } catch(e) {}
+document.documentElement.classList.remove('divine-void');
+window.paganResetWorld = function(){ location.href=location.pathname; };
+</script>
+<script id="pagan-form-script">
+(function(){
+  const portraits={female:'female.png',male:'male.png'};
+  const portrait=document.getElementById('pagan-portrait');
+  const buttons=document.querySelectorAll('[data-pagan-form]');
+  if(!portrait || !buttons.length) return;
+  function changeForm(form){
+    if(!portraits[form]) return;
+    portrait.src=portraits[form];
+    portrait.alt='파가넬리아 '+(form==='female'?'여체':'남체')+' 모습';
+    const height=form==='female'?'182':'203';
+    const stat=document.getElementById('pagan-height');
+    const side=document.getElementById('pagan-side-height');
+    if(stat) stat.textContent=height+' cm';
+    if(side) side.textContent=height+' CM';
+    buttons.forEach(button=>{
+      const selected=button.dataset.paganForm===form;
+      button.classList.toggle('is-selected',selected);
+      button.setAttribute('aria-pressed',String(selected));
+    });
+  }
+  buttons.forEach(button=>button.addEventListener('click',()=>changeForm(button.dataset.paganForm)));
+})();
+</script>
+</body>
+</html>
